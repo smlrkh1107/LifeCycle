@@ -25,6 +25,14 @@ class MainActivity : BaseActivity() {
 //        게시글을 쓰고 다시 돌아왔을 때, 새로운 게시글도 다시 불러오게 해준다.
     }
 
+    override fun onPause() {
+        super.onPause()
+        Log.d("MainActivity", "onPause실행됨")
+//        가려질때 마다 (앱을 아예 종료/ 다른앱 실행/ 앱화면에서 다음화면으로 이동시 .
+
+    }
+
+
     override fun setupEvents() {
         nextBtn.setOnClickListener {
             val myIntent = Intent(mContext,NextActivity::class.java)

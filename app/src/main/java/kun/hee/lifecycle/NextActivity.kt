@@ -16,6 +16,7 @@ class NextActivity :BaseActivity() {
         Log.d("NextActivity","onCreate실행됨")
 //       Main 화면에서 버튼 눌러질때마다 Create된다~!
 //        버튼 누르기 전에는 Oncreate되지 않아~!
+//        왜냐면 뒤로가기 버튼 >>> onDestroy
     }
 
     override fun onResume() {
